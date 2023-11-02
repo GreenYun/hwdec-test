@@ -110,11 +110,9 @@ struct ContentView: View {
                     Spacer()
                     boolToSymbol(codec.isSupported)
                 }
-                .focusable()
-
             }
             .contentShape(Rectangle())
-            //.buttonStyle(.plain)
+            .focusable(interactions: .activate)
             .onTapGesture {
                 showDesc.toggle()
             }

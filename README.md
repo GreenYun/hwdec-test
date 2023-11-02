@@ -9,6 +9,8 @@ Building Instructions
 Create a new **Multiplatform App** project in XCode, then paste the content in [ContentView.swift](ContentView.swift) to your project.
 Select your build target then build and run.
 
+If some dependencies are missing, add the packege `swift-collections` to your project.
+
 > Note: XCode 15 or equivalent SDK version may be required as AV1 support are introduced in the latest version of iOS/iPadOS/macOS/tvOS.
 > However, this does not means we cannot check AV1 support on older version OS's (But we all know that there is no hardware decoder supports).
 > The workaround is to change `kCMVideoCodecType_AV1` to the FourCC `av01` (0x61763031, Big Endian).
